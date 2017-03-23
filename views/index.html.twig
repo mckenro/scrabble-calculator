@@ -6,11 +6,27 @@
     <script src="../scripts/scripts.js"></script>
     <link href="../css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="../css/styles.css" type="text/css" rel="stylesheet">
-    <title>Project Title</title>
+    <title>Scrabble Calculator</title>
   </head>
   <body>
     <div class="container">
-      <h1>Project Title</h1>
+      <h1>Scrabble Calculator</h1>
+      <h2>Find the Scabble Score of any Word</h2>
+      <form action="/result" method="post">
+        <div class="form-group">
+          <label for="scrabble-word">Enter your word</label>
+          <input name="scrabble-word" type="text" class="form-control"></input>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary">Get Scrabble Score!</button>
+        </div>
+      </form>
+      <div class="display">
+        {% if result !=null %}
+        <h2>The Scrabble word score for "{{ randomWord }}" is: <span class="output">{{ result }}</span></h2>
+        <h4><a href="/">Try Another Word</a></h4>
+        {% endif %}
+      </div>    
     </div>
   </body>
 </html>

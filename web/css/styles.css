@@ -1,0 +1,18 @@
+.display h2 {
+  font-weight: 200;
+}
+
+.output {
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  padding-top: 12px;
+  text-align: center;
+  background: #EDE6DA;
+  border: 1px solid #D4C5AE;
+  border-radius: 16%;
+  box-shadow: 2px 2px 6px #888888;
+  font-size: 40px;
+  font-weight: 500;
+  color: #454545;
+}

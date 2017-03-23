@@ -36,7 +36,7 @@
                   $letter_value = $letter_value + 10;
                 }
             }
-            return ($letter_value);
+            return $letter_value;
           }
     }
 ?>
